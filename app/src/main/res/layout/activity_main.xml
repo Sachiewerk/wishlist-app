@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#28c0da"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="My WishList"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/thumbnail2"
+        android:src="@drawable/icon_wishlist"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        android:layout_width="65dp"
+        android:layout_height="65dp" />
+
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="60dp"
+        android:background="#ffffff"
+        android:hint="Enter Title"
+        android:textSize="28sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/wishEditText"
+        android:hint="Enter a wish..."
+        android:background="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/titleEditText"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/wishEditText"
+        android:layout_alignParentRight="true"
+        android:text="Submit"
+        android:textSize="23sp"
+        android:textAllCaps="false"
+        android:padding="15dp"
+        android:textColor="#28c0da"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
